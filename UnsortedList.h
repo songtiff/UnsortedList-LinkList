@@ -1,6 +1,7 @@
 #ifndef UNSORTEDLIST_H
 #define UNSORTEDLIST_H
 
+//memorize template/node structure
 template<class T>
 struct Node {
     T info;
