@@ -2,6 +2,12 @@
 #define UNSORTEDLIST_H
 
 template<class T>
+struct Node {
+    T info;
+    Node* next;
+};
+
+template<class T>
 class UnsortedList
 {
 public:
@@ -56,6 +62,8 @@ public:
 
 private:
   int length;
+  Node<T>* head;
+  Node<T>* currentPos; //used by Iterator
 
   // Need to create the head... and a node definition
   // Also need something to track the iterator position
